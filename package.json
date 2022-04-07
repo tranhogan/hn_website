@@ -1,0 +1,25 @@
+{
+  "name": "hn_website",
+  "version": "1.0.0",
+  "description": "hair and nails website",
+  "main": "index.js",
+  "dependencies": {
+    "-": "^0.0.1",
+    "npm": "^8.5.0",
+    "supersaas-api-client": "^1.2.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tranhogan/hn_website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tranhogan/hn_website/issues"
+  },
+  "homepage": "https://github.com/tranhogan/hn_website#readme"
+}
