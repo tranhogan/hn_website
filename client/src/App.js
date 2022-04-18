@@ -17,6 +17,12 @@ function App() {
         >
           Learn React
         </a>
+        <a
+        className="App-link"
+        href="base.html"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Hi</a>
       </header>
     </div>
   );
