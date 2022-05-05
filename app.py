@@ -2,9 +2,9 @@ import sys, os
 from flask import Flask, send_from_directory, render_template
 from flask_cors import CORS
 from flask import render_template
+from SuperSaaS import Client, Configuration
 
 app = Flask(__name__, static_url_path='', template_folder='flask-server/templates')
-
 @app.route("/")
 def index():
     return render_template('base.html')
