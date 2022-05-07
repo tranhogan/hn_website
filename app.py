@@ -7,7 +7,7 @@ from SuperSaaS import Client, Configuration
 app = Flask(__name__, static_url_path='', template_folder='flask-server/templates')
 @app.route("/")
 def index():
-    return render_template('base.html')
+    return render_template('index.html')
 
 @app.route("/appointments")
 def appointment():
@@ -16,6 +16,10 @@ def appointment():
 @app.route("/schedule")
 def schedule():
     return render_template('schedule.html')
+
+@app.route("/about")
+def about():
+    return render_template('about.html')
 
 if __name__ == "__main__":
     app.run(debug=True)
