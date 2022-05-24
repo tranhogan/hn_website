@@ -1,19 +1,29 @@
 import sys, os
-from flask import Flask, send_from_directory, render_template
+from flask import Flask, send_from_directory, render_template, url_for
 from flask_cors import CORS
-from flask import render_template
 from SuperSaaS import Client, Configuration
+import psycopg2
 
-app = Flask(__name__, static_url_path='', template_folder='flask-server/templates')
+conn = psycopg2.connect(
+    host = "localhost"
+    database="hn_db"
+    user=os.environ['hairnails']
+    password=os.environ['1234']
+)
+
+table = conn.cursor()
+app = Flask(__name__, static_folder='flask-server/static', template_folder='flask-server/templates')
+
+
 @app.route("/")
 def index():
     return render_template('index.html')
 
-@app.route("/appointments")
+@app.route("/appointments", methods=['GET', 'POST'])
 def appointment():
     return render_template('appointments.html')
 
-@app.route("/schedule")
+@app.route("/schedule", methods=['GET'])
 def schedule():
     return render_template('schedule.html')
 
