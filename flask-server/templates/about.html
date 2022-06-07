@@ -2,21 +2,20 @@
 {% set active_page = 'about' %}
 {% block content %}
 
-<header class="bg-black py-5">
-    <div class="container px-5">
-        <div class="row gx-5 text-center">
-            <h3 class="display-6 text-white">About Christina</h3>
+<header class="py-5">
+    <div class="container px-5 py-5">
+        <div class="flex-row gx-5">
         </div>
-        <div class="row gx-5">
-            <div class ="col-md-3 px-0">
-                <img class="img-fluid" src="{{url_for('static', filename='/assets/aboutpagemom.jpg')}}" alt="Christina Vo" style="width:100%">
+        <div class="row gx-5 justify-content-center">
+            <div class ="col-md-4 px-0">
+                <img class="img-fluid" src="{{url_for('static', filename='/assets/aboutpagemom.jpg')}}" alt="Christina Vo">
             </div>
-            <div class="col-lg-6">
-                <div class="text-center my-5">
-                    <!-- <h6 class="display-6 text-white mb-2">Hello! My name is Christina Vo and 
-                        I am the owner of College Hair and Nails! I have served the community of South Houston for over 10 years,
-                        providing haircuts to everyone with a smile!</h6> -->
-                <h6 class="text-white mb-2">Hello! My name is Christina Vo and 
+            <div class="col-lg-5">
+                <div class="text-center">
+                    <h3 class="display-6 text-dark">About me</h3>
+                </div>
+                <div class="text-center my-5 mx-5">
+                <h6 class="text-dark mx-5">Hello! My name is Christina Vo and 
                     I am the owner of College Hair and Nails! I have served the community of South Houston for over 10 years,
                     providing haircuts to everyone with a smile!</h6>
                 </div>

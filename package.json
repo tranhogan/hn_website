@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/tranhogan/hn_website/issues"
   },
-  "homepage": "https://github.com/tranhogan/hn_website#readme"
+  "homepage": "https://github.com/tranhogan/hn_website#readme",
+  "devDependencies": {
+    "prettier": "2.6.2"
+  }
 }
