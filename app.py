@@ -14,7 +14,7 @@ from SuperSaaS import Client, Configuration
 # )
 
 # table = conn.cursor()
-# app = Flask(__name__, static_folder='flask-server/static', template_folder='flask-server/templates')
+app = Flask(__name__, static_folder='flask-server/static', template_folder='flask-server/templates')
 # app.config['SQLALCHEMY_DATABASE-URI'] = os.environ['DATABASE_URL']
 # db = SQLAlchemy(app)
 

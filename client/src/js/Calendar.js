@@ -1,9 +1,8 @@
 // import logo from './logo.svg';
-import './Calendar.css';
 import React, {useState} from 'react';
 import Calendar from "react-calendar";
 // import 'react-calendar/dist/Calendar.css'
-import './Calendar.css'
+import '../css/Calendar.css'
 import { differenceInCalendarDays } from 'date-fns';
 
 const disabledDate = new Date("2022-06-09")

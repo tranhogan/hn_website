@@ -1,9 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import App from './js/App';
 import reportWebVitals from './reportWebVitals';
-import Calendar from "./Calendar"
+import Calendar from "./js/Calendar"
+import 'bootstrap/dist/css/bootstrap.css'
+import Navigation from "./js/Navigation"
 import { 
   BrowserRouter,
   Routes,
@@ -13,10 +15,13 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // <React.StrictMode>
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="calendar" element={<Calendar />} />
-      </Routes>
+    <div>
+      <Navigation />
+        <Routes>
+          <Route path="/" element={<App />} />
+          <Route path="calendar" element={<Calendar />} />
+        </Routes>
+    </div>
     </BrowserRouter>
   // </React.StrictMode>
 );
