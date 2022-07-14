@@ -42,12 +42,6 @@ def menhaircut():
 def womenhaircut():
     return render_template('womenhaircut.html')
 
-labels = ["From", "To", "Message Type", "Priority", "Date", "Subject", "id", "Age", "DOB", "Sex"]
-
-@app.route("/covid-test")
-def covid_test():
-    return render_template('covid-test.html', name=["Katia Avalos"], labels=labels)
-
 if __name__ == "__main__":
     app.run(debug=True)
 
