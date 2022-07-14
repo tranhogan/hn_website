@@ -40,21 +40,21 @@ function App() {
     <div className="App">
       <header className='App-header'>
       <Container className='body' fluid="true">
-          <Row id='bootstrap-row' className="justify-content-between">
+          <Row id='bootstrap-row' className="">
               <h1 className='title'>Welcome to the College Hair Salon!</h1>
-            <Col className="">
+            <Col className="justify-content-center">
               <Button href='calendar' variant='light' className='Appointment-button'>Create an Appointment</Button>
             </Col>
-            <Col className="">
+            {/* <Col className="">
               <img src={landingPageBG} className="haircut-img" />  
-            </Col>
-            <Col>
+            </Col> */}
+            {/* <Col> */}
               {/* <iframe width="100" height="100" style="border: 0" loading="lazy" allowfullscreen="false"
                     referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3466.9696987654493!2d-95.
                 23911238457195!3d29.66265364346107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864097f2b48998d3%3A0x5762eda6d30a46fe!2s
                 College%20Hair%20%26%20Nails!5e0!3m2!1sen!2sus!4v1652242239694!5m2!1sen!2sus">
                 </iframe> */}
-            </Col>
+            {/* </Col> */}
           </Row>
         </Container>
       </header>
