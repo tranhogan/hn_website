@@ -1,0 +1,257 @@
+{% extends "base.html" %} {% set active_page = active_page|default('index') -%}
+{% block content %}
+
+<header id="toplanding">
+    <div class="container px-5">
+        <div class="row gx-5 justify-content-center">
+            <div class="col-lg-6">
+                <div class="text-center my-5">
+                    <h1 class="display-5 fw-bolder text-white mb-2">
+                        Christina's Hair Salon
+                    </h1>
+                    <p class="lead text-white-50 mb-4"></p>
+                    <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+                        <a class="btn btn-primary btn-lg px-4 me-sm-3" href="appointments">Create an Appointment</a>
+                        <!-- <a class="btn btn-outline-light btn-lg px-4" href="schedule">Check Schedule</a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Features Section -->
+<section class="py-5 border-bottom" id="features">
+    <div class="container px-5 my-5">
+        <div class="justify-content-between row gx-5">
+            <!-- <div class="col-lg-4-mb-5 mb-lg-0"> -->
+                <!-- <div class="row-lg-4 mb-5 mb-lg-0"> -->
+                    <div class="col-lg-4 mb-2 mb-md-2">
+
+
+                        <!-- <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3">
+                            <i class="bi bi-collection"></i>
+                        </div> -->
+                        <a class="btn btn-secondary btn-lg px-3 me-sm-3 mb-5" href="menhaircut">Men's Haircuts</a>
+                    </div>
+                        
+                        <!-- <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3">
+                            <i class="bi bi-collection"></i>
+                        </div> -->
+                        
+                        
+                    <div class="col-lg-4 mb-2 mb-md-2">
+                        <a class="btn btn-secondary btn-lg px-3 me-sm-3 mb-5" href="womenhaircut">Women's Haircuts</a>
+                    </div>
+                <!-- </div> -->
+
+
+            <!-- </div> -->
+            <!-- Men's haircut -->
+            
+
+
+            <!-- Google Maps -->
+            <div class="col-lg-4 mb-5 mb-lg-0">
+                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3 justify-content-center">
+                    <i class="bi bi-building"></i>
+                </div>
+                <h2 class="h4 fw-bolder">Location</h2>
+                <iframe width="300" height="300" style="border: 0" loading="lazy" allowfullscreen
+                    referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3466.9696987654493!2d-95.
+                23911238457195!3d29.66265364346107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864097f2b48998d3%3A0x5762eda6d30a46fe!2s
+                College%20Hair%20%26%20Nails!5e0!3m2!1sen!2sus!4v1652242239694!5m2!1sen!2sus">
+                </iframe>
+                <!-- <a class="text-decoration-none" href="#!">
+                  Call to action
+                  <i class="bi bi-arrow-right"></i> -->
+                <!-- </a> -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Pricing section-->
+<section class="bg-light py-5 border-bottom">
+    <div class="container px-5 my-5">
+        <div class="text-center mb-5">
+            <h2 class="fw-bolder">Three different cuts to pick from:</h2>
+            <!-- <p class="lead mb-0">With our no hassle pricing plans</p> -->
+        </div>
+        <div class="row gx-5 justify-content-center">
+            <!-- Kids Haircut -->
+            <div class="col-lg-4 col-xl-4">
+                <div class="card mb-5 mb-xl-0">
+                    <div class="card-body p-5">
+                        <div class="small text-uppercase fw-bold text-muted">
+                            Kid's haircut
+                        </div>
+                        <div class="mb-3">
+                            <span class="display-4 fw-bold">$10</span>
+                            <!-- <span class="text-muted">/ mo.</span> -->
+                        </div>
+                        <!--
+                    <ul class="list-unstyled mb-4">
+                        <li class="mb-2">
+                            <i class="bi bi-check text-primary"></i>
+                            <strong>1 users</strong>
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-check text-primary"></i>
+                            5GB storage
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-check text-primary"></i>
+                            Unlimited public projects
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-check text-primary"></i>
+                            Community access
+                        </li>
+                        <li class="mb-2 text-muted">
+                            <i class="bi bi-x"></i>
+                            Unlimited private projects
+                        </li>
+                        <li class="mb-2 text-muted">
+                            <i class="bi bi-x"></i>
+                            Dedicated support
+                        </li>
+                        <li class="mb-2 text-muted">
+                            <i class="bi bi-x"></i>
+                            Free linked domain
+                        </li>
+                        <li class="text-muted">
+                            <i class="bi bi-x"></i>
+                            Monthly status reports
+                        </li>
+                    </ul>
+                    -->
+                        <!-- <div class="d-grid"><a class="btn btn-outline-primary" href="#!">Choose plan</a></div> -->
+                    </div>
+                </div>
+            </div>
+            <!-- Men's haircut -->
+            <div class="col-lg-4 col-xl-4">
+                <div class="card mb-5 mb-xl-0">
+                    <div class="card-body p-5">
+                        <div class="small text-uppercase fw-bold">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            Men's Haircut
+                        </div>
+                        <div class="mb-3">
+                            <span class="display-4 fw-bold">$12</span>
+                            <!-- <span class="text-muted">/ mo.</span> -->
+                        </div>
+                        <!-- <ul class="list-unstyled mb-4">
+                        <li class="mb-2">
+                            <i class="bi bi-check text-primary"></i>
+                            <strong>5 users</strong>
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-check text-primary"></i>
+                            5GB storage
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-check text-primary"></i>
+                            Unlimited public projects
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-check text-primary"></i>
+                            Community access
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-check text-primary"></i>
+                            Unlimited private projects
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-check text-primary"></i>
+                            Dedicated support
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-check text-primary"></i>
+                            Free linked domain
+                        </li>
+                        <li class="text-muted">
+                            <i class="bi bi-x"></i>
+                            Monthly status reports
+                        </li>
+                    </ul> -->
+                        <!-- <div class="d-grid"><a class="btn btn-primary" href="#!">Choose plan</a></div> -->
+                    </div>
+                </div>
+            </div>
+            <!-- Women's haircut -->
+            <div class="col-lg-4 col-xl-4">
+                <div class="card">
+                    <div class="card-body p-5">
+                        <div class="small text-uppercase fw-bold text-muted">
+                            Women's haircut
+                        </div>
+                        <div class="mb-3">
+                            <span class="display-4 fw-bold">$14</span>
+                            <span class="text-muted"></span>
+                        </div>
+                        <!-- <ul class="list-unstyled mb-4">
+                        <li class="mb-2">
+                            <i class="bi bi-check text-primary"></i>
+                            <strong>Unlimited users</strong>
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-check text-primary"></i>
+                            5GB storage
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-check text-primary"></i>
+                            Unlimited public projects
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-check text-primary"></i>
+                            Community access
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-check text-primary"></i>
+                            Unlimited private projects
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-check text-primary"></i>
+                            Dedicated support
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-check text-primary"></i>
+                            <strong>Unlimited</strong>
+                            linked domains
+                        </li>
+                        <li class="text-muted">
+                            <i class="bi bi-check text-primary"></i>
+                            Monthly status reports
+                        </li>
+                    </ul>
+                  -->
+                        <!-- <div class="d-grid"><a class="btn btn-outline-primary" href="#!">Choose plan</a></div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">College Hair and Nails</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="appointments">Make an appointment</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="schedule">Schedule</a>
+                </li>
+              </ul>
+            </nav>           
+-->
+
+{% endblock %}

@@ -10,7 +10,7 @@ function Navigation() {
     return (
         <Navbar className='navbar' variant='dark' expand='lg'>
             <Container>
-                <Navbar.Brand className='title' href='/'>College Hair Salon</Navbar.Brand>
+                <Navbar.Brand className='title' href='/'>Christina's Hair Salon</Navbar.Brand>
                 <Navbar.Toggle aria-controls='basic-navbar-nav' />
                 <Navbar.Collapse id='basic-navbar-nav'>
                     <Nav id='nav-items' className='ms-auto mv-auto mb-auto'>

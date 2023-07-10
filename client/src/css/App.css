@@ -1,5 +1,18 @@
 .App {
   text-align: center;
+  background-color: rgb(40, 44, 52);
+  background-image: url("../assets/hair-tools.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-position: center center; */
+  min-height: 100vh;
+  /* background-color: #282c34; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* font-size: calc(10px + 2vmin); */
+  color: white;
 }
 
 .App-logo {
@@ -13,12 +26,18 @@
   }
 }
 
-.title {
+.main-title {
   /* color: black; */
   /* margin: 20px; */
-  padding-bottom: 50px;
+  /* padding-bottom: 50px; */
   font-family: serif;
   font-size: 30px;
+}
+
+@media (min-width: 600px) {
+  .main-title {
+    /* font-size: 12px; */
+  }
 }
 
 .haircut-img {
@@ -27,25 +46,32 @@
   height: auto;
 }
 
-.body {
+.bootstrap-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.App-body {
   background-color: rgba(40, 44, 52, 0.5);
   /* background-color: #282c34; */
   /* opacity: 0.5; */
   /* padding-left: 10%; */
   /* padding-right: 10%; */
-  margin: 50px 100px;
-  padding: 100px 100px;
+  margin: 50px 50px;
+  padding: 100px 50px;
   border-radius: 20px;
-  min-height: 100vh;
+  /* min-height: 100vh; */
+  min-height: 400px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  /* opacity: 0.5; */
   /* justify-content: center; */
+  /* align-items: center; */
+  /* opacity: 0.5; */
 }
-
 .Appoinment-button {
   background-color: white;
+  /* width: 300px;
+  height: 400px; */
 }
 
 .Appointment-button:focus {
@@ -63,23 +89,21 @@
 }
 
 .App-header {
-  background-color: rgb(40, 44, 52);
-  background-image: url("../assets/hair-tools.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  /* background-position: center center; */
-  min-height: 100vh;
-  /* background-color: #282c34; */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  /* font-size: calc(10px + 2vmin); */
-  color: white;
+  color: black;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.prices {
+  color: black;
+}
+
+.contact {
+  color: black;
+  width: 500px;
+  height: 400px;
 }
 
 @keyframes App-logo-spin {
